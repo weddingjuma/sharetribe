@@ -7,3 +7,11 @@
   display: inline-block;
   height: 100%;
 }
+
+.textAvatar {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

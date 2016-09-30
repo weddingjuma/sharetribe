@@ -95,6 +95,8 @@ class ListingCard extends Component {
           url: listing.profileURL,
           image: listing.avatarURL,
           color: this.props.color,
+          givenName: listing.author.givenName,
+          familyName: listing.author.familyName,
         })),
         a({
           className: css.title,

@@ -1,16 +1,5 @@
 import Immutable from 'immutable';
-
-export const Image = Immutable.Record({
-  type: ':square',
-  height: 408,
-  width: 408,
-  url: null,
-});
-
-export const ImageRefs = Immutable.Record({
-  square: new Image(),
-  square2x: new Image(),
-});
+import { Image, ImageRefs } from './ImageModel';
 
 const ListingModel = Immutable.Record({
   id: 'uuid',
@@ -29,8 +18,6 @@ const ListingModel = Immutable.Record({
 
   // these need to be updated
   listingURL: 'https://example.com/listing/1',
-  avatarURL: 'https://placehold.it/40x40',
-  profileURL: 'https://example.com/anonym',
 });
 
 export const parse = (l) => new ListingModel({
